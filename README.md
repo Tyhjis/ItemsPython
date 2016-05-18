@@ -13,9 +13,9 @@ The database will be small and simple. At this moment django is configured to us
 I'm using virtualenv in this project. I will do the necessary scripts which can be used to set up the development environment. Basically on mac cli the commands given in the project root are: 
 
 ```shell
-*$ virtualenv --python=python3.5 ENV*
-*$ source ENV/bin/activate*
-*(ENV)$ pip install -r requirements.txt*
+$ virtualenv --python=python3.5 ENV
+$ source ENV/bin/activate
+(ENV)$ pip install -r requirements.txt
 ```
 
 The first command sets up the virtual environment with python3.5. The python version might not be necessary. Second command activates the virtualenv to be used as the project source. The last command installs all the pip-packages which are listed in the requirements.txt file (e.g. Django 1.9.6).
