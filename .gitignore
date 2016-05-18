@@ -1,5 +1,5 @@
-djangoproj
 db.sqlite3
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -76,6 +76,10 @@ target/
 
 # celery beat schedule file
 celerybeat-schedule
+
+# virtualenv
+venv/
+ENV/
 
 # dotenv
 .env
