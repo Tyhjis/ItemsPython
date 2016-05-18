@@ -18,4 +18,8 @@ $ source ENV/bin/activate
 (ENV)$ pip install -r requirements.txt
 ```
 
-The first command sets up the virtual environment with python3.5. The python version might not be necessary. Second command activates the virtualenv to be used as the project source. The last command installs all the pip-packages which are listed in the requirements.txt file (e.g. Django 1.9.6).
+The first command sets up the virtual environment with python3.5. (The python version defining might not be necessary.) The second command activates the virtualenv to be used as the project source. The last command installs all the pip-packages listed in the requirements.txt file (e.g. Django 1.9.6).
+
+The virtual environment is in gitignore, so when this project is cloned into a new platform, the environment has to be set up. 
+
+*TODO: list all dependencies*
