@@ -1,0 +1,36 @@
+<h1>Item database index</h1>
+
+{% if item_list %}
+	<table border="1">
+	<th>
+		Name
+	</th>
+	<th>
+		Type
+	</th>
+	<th>
+		Added to database
+	</th>
+	<th>
+		Last updated
+	</th>
+	{% for item in item_list %}
+		<tr>
+			<td>
+				<a href="/items/{{ item.id }}/">{{ item.name }}</a>
+			</td>
+			<td>
+				{{ item.item_type }}
+			</td>
+			<td>
+				{{ item.created_at }}
+			</td>
+			<td>
+				{{ item.updated_at }}
+			</td>
+		</tr>
+	{% endfor %}
+	</table>
+{% else %}
+	<p>No items in database.</p>
+{% endif %}
