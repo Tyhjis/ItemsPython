@@ -1,0 +1,12 @@
+td a {
+	color: #add8e6;
+}
+
+td a:visited {
+	color: yellow;
+}
+
+body {
+	background-color: black;
+	color: white;
+}
