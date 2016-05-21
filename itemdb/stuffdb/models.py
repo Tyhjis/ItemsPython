@@ -12,6 +12,9 @@ class Maker(models.Model):
 	first_name = models.CharField(max_length=30)
 	last_name = models.CharField(max_length=30)
 
+	def __str__(self):
+		return str.format("{0} {1}", self.first_name, self.last_name)
+
 class Item(models.Model):
 	item_type = models.ForeignKey(Item_type, on_delete=models.CASCADE)
 	name = models.CharField(max_length=100)

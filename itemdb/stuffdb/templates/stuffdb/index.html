@@ -17,7 +17,7 @@
 	{% for item in item_list %}
 		<tr>
 			<td>
-				<a href="/items/{{ item.id }}/">{{ item.name }}</a>
+				<a href="{% url 'stuffdb:detail' item.id %}">{{ item.name }}</a>
 			</td>
 			<td>
 				{{ item.item_type }}
